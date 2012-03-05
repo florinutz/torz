@@ -1,0 +1,8 @@
+1337x:
+  url: '1337x.org\/torrent\/(\d*)'
+  
+vertor:
+  url: 'vertor.com\/torrents\/(\d*)\/(.*)'
+
+h33t:
+  url: 'h33t.com\/details\.php\?id=(\w*)'
