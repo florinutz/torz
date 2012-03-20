@@ -1,7 +1,5 @@
 module Torz
   
-  TESTING = true
-
   class Config
     
     require 'open-uri'

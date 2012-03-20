@@ -1,15 +1,11 @@
 #!/usr/bin/env ruby
-#$LOAD_PATH << './lib'
-require 'rubygems'
-require 'open-uri'
-require 'nokogiri'
-require 'yaml'
-require 'imdb'
-require_relative 'lib/movie'
+$LOAD_PATH << './lib'
+%w{rubygems open-uri nokogiri yaml imdb lib/_loader.rb}.each{ |lib| require lib }
 
 # item = Steal::TItem.new('0581dbd0e8917658ed5b641d3b037002cbe5965c')
 # item.fetchSources
 # puts item.sources.inspect
 
-conf = Torz::Config.new
-puts conf.yml
+
+rarbg = Torz::Rarbg.new
+puts rarbg.name
